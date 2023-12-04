@@ -58,7 +58,7 @@ public class LightyReleaser {
 
         //Set scm.tag to HEAD
         replaceInFiles(directory, "<tag>" + replaceStr + "</tag>", "<tag>HEAD</tag>", ".xml");
-        commitChanges(directory,"Set scm.tag to " + replaceStr);
+        commitChanges(directory,"Set scm.tag to HEAD");
     }
 
     private static void replaceInFiles(String directory, String searchStr, String replaceStr, String fileExtension) {
